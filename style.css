@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    font-family: "Noto Sans", "sans-serif";
+    font-weight: 700;
+    font-size: 20px;
+    display: flex;
+    background-color: rgb(213, 194, 222);
+    padding: 23px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -8px;
+    margin-left: 23px;
+    margin-right: 23px;
+    mix-blend-mode: multiply;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+    transition: all;
+    transition-duration: 400ms;
+}
+
+nav li a:hover {
+    /* cursor: pointer; */
+    text-decoration: none;
+    color: rgb(103, 23, 120);
+}
+
+nav ul {
+    display: flex;
+}
+
+.container {
+    min-height: 100vh;
+    background-color: white;
+    max-width: 80vw;
+    margin: auto;
+}
+
+.container h1,
+h2 {
+    /* text-align: center; */
+    margin: 23px 0;
+}
+
+.container form input[type="number"],
+select,
+label {
+    font-size: 25px;
+    margin-bottom: 23px;
+    width: 23vw;
+}
+
+.container form label {
+    font-size: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .btn {
+    width: 144px;
+    padding: 5px 8px;
+    font-size: 20px;
+    background-color: rgb(178, 125, 203);
+    color: black;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+.output {
+    display: none;
+}
+
+.output table {
+    width: 50vw;
+    text-align: center;
+    border: 2px solid black;
+    font-size: 20px;
+}
+
+.output table th{
+    padding: 23px;
+}
+
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        font-size: 14px;
+    }
+
+    nav ul li {
+        margin: 5px 13px;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+    .container{
+        max-width: 95vw;
+    }
+    .container form input[type="number"]{
+        width: 80vw;
+    }
+    .container form input [type="number"],
+    select,
+    label {
+        width: 80vw;
+        padding: 1px;
+    }
+    .logo{
+        font-size: 24px;
+    }
+    .output table th{
+        padding: 0px;
+    }
+}
+
+
+footer {
+    text-align:center;
+    padding: 5px;
+    font-family: "Poppins", "sans-serif";
+}
